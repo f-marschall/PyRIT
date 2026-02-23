@@ -8,6 +8,7 @@ Target implementations for interacting with different services and APIs,
 for example sending prompts or transferring content (uploads).
 """
 
+from pyrit.prompt_target.a2a_chat_target.a2a_chat_target import A2AChatTarget
 from pyrit.prompt_target.azure_blob_storage_target import AzureBlobStorageTarget
 from pyrit.prompt_target.azure_ml_chat_target import AzureMLChatTarget
 from pyrit.prompt_target.common.prompt_chat_target import PromptChatTarget
@@ -39,6 +40,7 @@ from pyrit.prompt_target.text_target import TextTarget
 from pyrit.prompt_target.websocket_copilot_target import WebSocketCopilotTarget
 
 __all__ = [
+    "A2AChatTarget",
     "AzureBlobStorageTarget",
     "AzureMLChatTarget",
     "CopilotType",

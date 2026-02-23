@@ -131,9 +131,13 @@ opencv = [
 speech = [
     "azure-cognitiveservices-speech>=1.46.0",
 ]
+a2a = [
+    "a2a-sdk>=0.3.0",
+]
 
 # all includes all functional dependencies excluding the ones from the "dev" extra
 all = [
+    "a2a-sdk>=0.3.0",
     "accelerate>=1.7.0",
     "azure-ai-ml>=1.27.1",
     "azure-cognitiveservices-speech>=1.44.0",
